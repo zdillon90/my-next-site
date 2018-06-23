@@ -10,4 +10,10 @@ const Button = styled.button`
   border: 2px solid palevioletred;
 `;
 
-export default () => <Button>{this.props.value}</Button>;
+// export default () => <Button>Test Hello</Button>;
+
+const styledButton = props => (
+  <Button>{props.text}</Button>
+);
+
+export default styledButton;

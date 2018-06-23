@@ -21,6 +21,6 @@ export default () => (
     <Title>
       Hello World, this is my first styled component!
     </Title>
-    <Button value="hello button" />
+    <Button text="Testing hello world" />
   </Wrapper>
 );
