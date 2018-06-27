@@ -1,14 +1,26 @@
 import React from 'react';
-import Link from 'next/link';
+import styled from 'styled-components';
+import Button from '../components/Button';
 
-const Index = () => {
-  return (
-    <div className="container bg-primary page">
-      <h1>Hello, world!</h1>
-      <Link href="/about">
-        <a className="btn btn-light">About us</a>
-      </Link>
-    </div>
-  );
-};
-export default Index;
+// Create a Title component that'll render an <h1> tag with some styles
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+// Create a Wrapper component that'll render a <section> tag with some styles
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+// Use Title and Wrapper like any other React component – except they're styled!
+export default () => (
+  <Wrapper>
+    <Title>
+      Hello World, this is my first styled component!
+    </Title>
+    <Button text="Testing hello world" />
+  </Wrapper>
+);

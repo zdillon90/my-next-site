@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
     "eslint": "^4.19.1",
     "next": "^6.0.3",
     "next-page-transitions": "^1.0.0-alpha.4",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "styled-components": "^3.3.3"
   },
   "scripts": {
     "dev": "next",
